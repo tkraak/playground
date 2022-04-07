@@ -1,0 +1,10 @@
+<span
+  role="button"
+  class="custom-header"
+  {{on 'click' this.inverseSort}}
+>
+  {{yield}}
+  {{#if this.isSorted}}
+    {{svg-jar "arrow-down" class=this.sortOrder}}
+  {{/if}}
+</span>
