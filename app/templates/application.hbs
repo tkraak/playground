@@ -1,3 +1,33 @@
 <h2 id="title">Welcome to Ember</h2>
 
+{{!--
+<FileDropzone @name="photos" as |dropzone queue|>
+  {{#if dropzone.active}}
+    {{#if dropzone.valid}}
+      Drop to upload
+    {{else}}
+      Invalid
+    {{/if}}
+  {{else if queue.files.length}}
+    Uploading {{queue.files.length}} files. ({{queue.progress}}%)
+  {{else}}
+    <h4>Upload Images</h4>
+    <p>
+      {{#if dropzone.supported}}
+        Drag and drop images onto this area to upload them or
+      {{/if}}
+      <FileUpload
+        @name="photos"
+        @for="upload-photo"
+        @accept="image/*"
+        @multiple={{true}}
+        @onFileAdd={{this.uploadImage}}
+      >
+        Add an Image
+      </FileUpload>
+    </p>
+  {{/if}}
+</FileDropzone>
+--}}
+
 {{outlet}}
